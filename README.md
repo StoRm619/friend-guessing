@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-HELLO this is a test update commit
+
 
 In the project directory, you can run:
 
