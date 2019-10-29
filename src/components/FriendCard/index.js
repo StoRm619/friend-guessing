@@ -1,30 +1,12 @@
-import React from "react";
+import React from 'react';
 import "./style.css";
 
 function FriendCard(props) {
-  return (
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-      <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
-        </ul>
-      </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
-    </div>
-  );
+    return (
+        <div className="card">
+            <img className="cardImage" style={{width: 300, height: 300}} src={props.image} alt="Card Pic" onClick={() => props.handleIncrement(props.id)}></img>
+        </div>
+    )
 }
 
 export default FriendCard;
